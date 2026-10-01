@@ -4,6 +4,8 @@
 
 **Status:** v0.1.0, working on Windows. The Linux and macOS code paths use the same libraries but have not been run.
 
+![fim check reporting one modified file, one added script and one removed file against the baseline](docs/images/check.png)
+
 ## Features
 
 - Baseline of SHA-256 or BLAKE3 hashes, size, modification time and permissions, stored as JSON.
