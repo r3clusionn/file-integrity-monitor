@@ -1,0 +1,30 @@
+[package]
+name = "fim"
+version = "0.1.0"
+edition = "2021"
+description = "File integrity monitor: cryptographic baselines, change reports and live alerts."
+license = "MIT"
+
+[lib]
+name = "fim"
+
+[dependencies]
+blake3 = "1"
+clap = { version = "4", features = ["derive"] }
+ctrlc = "3"
+globset = "0.4"
+hex = "0.4"
+hmac = "0.12"
+notify = "6"
+rayon = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+walkdir = "2"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+lto = true
+strip = true
